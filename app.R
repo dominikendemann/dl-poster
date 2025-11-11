@@ -67,10 +67,10 @@ ui <- navbarPage(
                         tags$iframe(id = "Datei4", width = 1000, height = 800, src = "CurrM.pdf"))
              )
            )),
-  tabPanel("Demo Items",
+  tabPanel("Items",
            fluidPage(
              mainPanel(
-               tags$iframe(id = "demoitems", style = "width:100vw; height:100vh; border:none;", src = "poster.pdf")
+               tags$iframe(id = "demoitems", style = "width:100vw; height:100vh; border:none;", src = "Itemliste.pdf")
              )
            ))
 )
@@ -124,4 +124,5 @@ server <- function(input, output) {
 
 # Shiny-Anwendung starten
 shinyApp(ui, server)
+
 
