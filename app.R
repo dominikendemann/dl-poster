@@ -66,6 +66,12 @@ ui <- navbarPage(
                tabPanel("Internes Curriculum Mathematik",
                         tags$iframe(id = "Datei4", width = 1000, height = 800, src = "CurrM.pdf"))
              )
+           )),
+  tabPanel("Demo Items",
+           fluidPage(
+             mainPanel(
+               tags$iframe(id = "demoitems", style = "width:100vw; height:100vh; border:none;", src = "poster.pdf")
+             )
            ))
 )
 
@@ -118,3 +124,4 @@ server <- function(input, output) {
 
 # Shiny-Anwendung starten
 shinyApp(ui, server)
+
